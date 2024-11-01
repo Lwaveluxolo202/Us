@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Love Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Let's see if you know me!</h2>
+    <form id="quiz-form">
+        <label>1. What is my favorite thing about you?</label><br>
+        <input type="radio" name="q1" value="wrong"> Your sense of humor<br>
+        <input type="radio" name="q1" value="correct"> You in general<br><br>
+
+        <label>2. How often do you think about us?</label><br>
+        <input type="radio" name="q2" value="correct"> All the time<br>
+        <input type="radio" name="q2" value="wrong"> Sometimes<br><br>
+
+        <label>3. What is my favorite color?</label><br>
+        <input type="radio" name="q3" value="wrong"> Blue<br>
+        <input type="radio" name="q3" value="correct"> Black<br>
+        <input type="radio" name="q3" value="wrong"> Red<br>
+        <input type="radio" name="q3" value="wrong"> Pink<br><br>
+
+        <label>4. What's my favorite way to spend time with you?</label><br>
+        <input type="radio" name="q4" value="wrong">Trying new restaraunts<br>
+        <input type="radio" name="q4" value="correct"> Relaxing at home<br>
+        <input type="radio" name="q4" value="wrong"> Going on adventures<br>
+        <input type="radio" name="q4" value="wrong"> Taking a walk<br><br>
+
+        <label>5. What is your partner's favorite movie genre?</label><br>
+        <input type="radio" name="q5" value="correct"> Romantic<br>
+        <input type="radio" name="q5" value="wrong"> Horror<br>
+        <input type="radio" name="q5" value="wrong"> Action<br>
+        <input type="radio" name="q5" value="wrong"> Comedy<br><br>
+
+        <label>6. What is your my favorite food?</label><br>
+        <input type="radio" name="q6" value="wrong"> Pizza<br>
+        <input type="radio" name="q6" value="correct"> Wings<br>
+        <input type="radio" name="q6" value="wrong"> Burgers<br>
+        <input type="radio" name="q6" value="wrong"> Sushi<br><br>
+
+        <label>7. When is our anniversary?</label><br>
+        <input type="radio" name="q7" value="wrong"> June 15<br>
+        <input type="radio" name="q7" value="wrong"> August 10<br>
+        <input type="radio" name="q7" value="correct"> April 14<br>
+        <input type="radio" name="q7" value="wrong"> November 5<br><br>
+
+        <label>8. What is my dream vacation destination?</label><br>
+        <input type="radio" name="q8" value="wrong"> Dubai<br>
+        <input type="radio" name="q8" value="correct"> South Korea<br>
+        <input type="radio" name="q8" value="wrong"> Tokyo<br>
+        <input type="radio" name="q8" value="wrong"> Zanzibar<br><br>
+
+        <label>9. What is the nickname my family calls me?</label><br>
+        <input type="radio" name="q9" value="wrong"> Mince<br>
+        <input type="radio" name="q9" value="wrong"> Mins<br>
+        <input type="radio" name="q9" value="correct">Mints<br>
+        <input type="radio" name="q9" value="wrong"> Mintsie<br><br>
+
+        <label>10. When did I tell you I like you too?(You might not remember)</label><br>
+        <input type="radio" name="q10" value="wrong"> Grade 10[2017]<br>
+        <input type="radio" name="q10" value="wrong"> Grade 11[2018]<br>
+        <input type="radio" name="q10" value="correct">Grade 9[2016]<br>
+        <input type="radio" name="q10" value="wrong">Never<br><br>
+
+        <button type="button" onclick="calculateQuizScore()">See How Much You Love Me</button>
+        <p id="quiz-result"></p>
+    </form>
+</body>
+</html>
+

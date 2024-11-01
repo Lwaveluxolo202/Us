@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6e6;
+    color: #cc0000;
+}
+
+h1, h2 {
+    color: #990000;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #990000;
+    text-decoration: none;
+}
+
+button {
+    background-color: #ff9999;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff4d4d;
+}
+
+#top-image {
+    width: 40%;            /* Adjust width as needed */
+    height: 200px;         /* Set a fixed height to minimize the image */
+    max-width: 1000px;     /* Ensure image doesn't exceed a certain width */
+    object-fit: cover;     /* Cover area while maintaining aspect ratio */
+    display: block;
+    margin: 20px auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Hide all slides by default */
+.slide {
+    display: none;
+    text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+/* Slide display */
+.slide.active {
+    display: block;
+}
+
+/* Next and previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a background color to the buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
